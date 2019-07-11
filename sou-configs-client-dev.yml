@@ -1,5 +1,5 @@
 env: prod
 spring:
   datasource:
-    password: username
-    username: password
+    password: devpwd
+    username: deuname
