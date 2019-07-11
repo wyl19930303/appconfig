@@ -1,3 +1,5 @@
 env: prod
-spring.username: username
-spring.password: password
+spring:
+  datasource:
+    password: root
+    username: root
