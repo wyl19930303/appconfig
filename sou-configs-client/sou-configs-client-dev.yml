@@ -1,5 +1,8 @@
-env: prod
-spring:
-  datasource:
-    password: devpwd
-    username: deuname
+eureka:
+  client:
+    serviceUrl:
+      #注册中心地址多注册中心地址
+      defaultZone: http://localhost:9997/eureka/,http://192.168.142.10:9999/eureka/
+  instance:
+    prefer-ip-address: true    #开启ip地址，鼠标移动到eureka显示ip地址
+    instance-id: ${spring.application.name}${server.port}  #自定义一个id
